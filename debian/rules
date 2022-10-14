@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_installexamples:
+	dh_installexamples
+	# patch example
+	find $(CURDIR)/debian/node-object-inspect/usr/share/doc/node-object-inspect/examples/ -name '*.js' -exec \
+                sed -i "s,require\s*[(]\s*'[.][.][^']*'\s*[)],require('node-object-inspect'),g" {} \;
