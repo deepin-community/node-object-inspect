@@ -3,10 +3,8 @@ Author: Xavier Guimard <yadd@debian.org>
 Forwarded: not-needed
 Last-Update: 2020-12-08
 
-Index: node-object-inspect/test/indent-option.js
-===================================================================
---- node-object-inspect.orig/test/indent-option.js
-+++ node-object-inspect/test/indent-option.js
+--- a/test/indent-option.js
++++ b/test/indent-option.js
 @@ -1,10 +1,9 @@
  var test = require('tape');
 -var forEach = require('for-each');
@@ -19,7 +17,7 @@ Index: node-object-inspect/test/indent-option.js
          undefined,
          true,
          false,
-@@ -13,7 +12,7 @@ test('bad indent options', function (t)
+@@ -13,7 +12,7 @@
          Infinity,
          -Infinity,
          NaN
@@ -28,10 +26,8 @@ Index: node-object-inspect/test/indent-option.js
          t['throws'](
              function () { inspect('', { indent: indent }); },
              TypeError,
-Index: node-object-inspect/test/inspect.js
-===================================================================
---- node-object-inspect.orig/test/inspect.js
-+++ node-object-inspect/test/inspect.js
+--- a/test/inspect.js
++++ b/test/inspect.js
 @@ -1,7 +1,6 @@
  var test = require('tape');
  var hasSymbols = require('has-symbols/shams')();
@@ -40,7 +36,7 @@ Index: node-object-inspect/test/inspect.js
  
  var inspect = require('..');
  
-@@ -78,7 +77,7 @@ test('maxStringLength', function (t) {
+@@ -78,7 +77,7 @@
          'maxStringLength must be >= 0, or Infinity, not negative'
      );
  
