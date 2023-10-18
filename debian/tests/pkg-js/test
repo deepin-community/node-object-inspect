@@ -1,2 +1,2 @@
-tap -R spec $(find test -maxdepth 1 -name '*.js' -and -not -name fn.js)
+tap -R spec --no-cov $(find test -maxdepth 1 -name '*.js' -and -not -name fn.js)
 nodejs test-core-js

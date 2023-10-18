@@ -10,7 +10,7 @@ Build-Depends: debhelper-compat (= 13)
  , node-debbundle-es-to-primitive <!nocheck>
  , node-tape <!nocheck>
  , node-tap <!nocheck>
-Standards-Version: 4.6.0
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-object-inspect
 Vcs-Git: https://salsa.debian.org/js-team/node-object-inspect.git
 Homepage: https://github.com/substack/object-inspect
